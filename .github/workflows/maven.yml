@@ -35,3 +35,6 @@ jobs:
         -Dsonar.projectKey=dolphinscheduler 
         -Dsonar.login=4b0e0f21a3f1663f5b190305c7435d28363ffa2f 
         -Dmaven.test.skip=true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
